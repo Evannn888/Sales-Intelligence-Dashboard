@@ -1,780 +1,795 @@
 [
   {
-    "companyName": "Internal User (172.26.105.191)",
-    "leadScore": 50,
+    "companyName": "BEL DC",
+    "leadScore": 66,
     "keyInterests": [
-      "Government Sector",
-      "Requested Demo",
-      "Conversation Hub",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-25T22:21:46-07:00",
-    "visitCount": 4
-  },
-  {
-    "companyName": "AWS EC2 (ap-southeast-2)",
-    "leadScore": 35,
-    "keyInterests": [
-      "Government Sector",
-      "Conversation Hub",
-      "Financial Services Industry",
-      "Technology Sector",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-27T23:53:22-07:00",
-    "visitCount": 5
-  },
-  {
-    "companyName": "Shared Services Canada",
-    "leadScore": 37,
-    "keyInterests": [
-      "Telecommunications",
-      "Conversation Hub",
-      "Health Insurance",
-      "Company News",
-      "Webinars",
-      "Retail Industry",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-26T09:04:02-07:00",
-    "visitCount": 7
-  },
-  {
-    "companyName": "Apple Inc",
-    "leadScore": 157,
-    "keyInterests": [
-      "Telecommunications",
-      "Insurance Industry",
-      "Conversation Hub",
-      "Banking Industry",
-      "Analytics Product",
-      "Healthcare Providers",
-      "Knowledge Hub Trial",
-      "Case Studies",
+      "Careers",
       "Utilities Industry",
-      "Contacted Sales",
-      "Healthcare Industry",
       "Health Insurance",
-      "Webinars",
-      "Knowledge Hub Research",
+      "Knowledge Hub Trial",
       "Technology Sector",
-      "Retail Industry",
+      "Manufacturing Industry",
+      "Financial Services Industry",
       "AI Agent Research"
     ],
-    "lastVisit": "2025-06-27T13:58:45-07:00",
-    "visitCount": 26
+    "lastVisit": "2025-06-19T21:26:37-07:00",
+    "visitCount": 11
   },
   {
-    "companyName": "KPN Mobile The Netherlands B.V.",
-    "leadScore": 31,
+    "companyName": "Internal User (172.23.108.6)",
+    "leadScore": 55,
     "keyInterests": [
-      "Government Sector",
-      "Financial Services Industry",
-      "Careers",
-      "Public Sector",
-      "Technology Sector",
-      "Retail Industry",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-25T23:41:35-07:00",
-    "visitCount": 7
-  },
-  {
-    "companyName": "Level 3, LLC",
-    "leadScore": 180,
-    "keyInterests": [
-      "Requested Demo",
-      "Banking Industry",
-      "About Us",
-      "Public Sector",
-      "Podcasts",
-      "Telecommunications",
       "Utilities Industry",
-      "Case Studies",
-      "AI Agent Trial",
-      "Government Sector",
-      "Conversation Hub",
-      "Travel/Hospitality/Airlines",
-      "Health Insurance",
-      "Webinars",
+      "Analytics Product",
+      "Insurance Industry",
       "Retail Industry",
       "Manufacturing Industry",
       "Healthcare Providers",
-      "Insurance Industry",
-      "ROI/Justification",
-      "Analytics Product",
-      "Company News",
-      "Knowledge Hub Trial"
-    ],
-    "lastVisit": "2025-06-28T07:42:03-07:00",
-    "visitCount": 39
-  },
-  {
-    "companyName": "Internal User (10.30.125.162)",
-    "leadScore": 36,
-    "keyInterests": [
-      "Insurance Industry",
-      "Utilities Industry",
-      "AI Agent Research",
-      "Health Insurance",
-      "Webinars",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-27T22:59:17-07:00",
-    "visitCount": 6
-  },
-  {
-    "companyName": "Internal User (10.41.27.30)",
-    "leadScore": 71,
-    "keyInterests": [
-      "Telecommunications",
-      "Government Sector",
-      "Analytics Product",
-      "Travel/Hospitality/Airlines",
-      "Case Studies",
-      "Utilities Industry",
-      "Healthcare Industry",
-      "Financial Services Industry",
-      "Public Sector",
-      "Retail Industry",
       "AI Agent Research"
     ],
-    "lastVisit": "2025-06-27T19:26:30-07:00",
-    "visitCount": 14
-  },
-  {
-    "companyName": "USDA",
-    "leadScore": 83,
-    "keyInterests": [
-      "Insurance Industry",
-      "Telecommunications",
-      "ROI/Justification",
-      "About Us",
-      "Public Sector",
-      "Financial Services Industry",
-      "Health Insurance",
-      "Podcasts",
-      "Webinars",
-      "Knowledge Hub Trial",
-      "AI Agent Research"
-    ],
-    "lastVisit": "2025-06-24T11:02:32-07:00",
-    "visitCount": 12
-  },
-  {
-    "companyName": "Google LLC",
-    "leadScore": 27,
-    "keyInterests": [
-      "Utilities Industry",
-      "Case Studies",
-      "Public Sector",
-      "Careers",
-      "Health Insurance",
-      "Retail Industry",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-24T15:13:42-07:00",
+    "lastVisit": "2025-06-27T03:50:14-07:00",
     "visitCount": 7
-  },
-  {
-    "companyName": "Microsoft Azure Cloud (canadacentral)",
-    "leadScore": 51,
-    "keyInterests": [
-      "Telecommunications",
-      "Insurance Industry",
-      "Banking Industry",
-      "Healthcare Industry",
-      "Public Sector",
-      "Financial Services Industry",
-      "Health Insurance",
-      "Podcasts",
-      "Knowledge Hub Research"
-    ],
-    "lastVisit": "2025-06-23T20:50:51-07:00",
-    "visitCount": 10
-  },
-  {
-    "companyName": "Aliyun Computing Co.",
-    "leadScore": 62,
-    "keyInterests": [
-      "Telecommunications",
-      "Government Sector",
-      "Analytics Product",
-      "Travel/Hospitality/Airlines",
-      "Utilities Industry",
-      "AI Agent Research",
-      "Podcasts",
-      "Webinars",
-      "Technology Sector",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-22T19:14:45-07:00",
-    "visitCount": 11
-  },
-  {
-    "companyName": "Internal User (10.155.245.168)",
-    "leadScore": 51,
-    "keyInterests": [
-      "Insurance Industry",
-      "Government Sector",
-      "Telecommunications",
-      "Conversation Hub",
-      "Banking Industry",
-      "Travel/Hospitality/Airlines",
-      "Healthcare Industry",
-      "Podcasts",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-23T19:17:47-07:00",
-    "visitCount": 11
-  },
-  {
-    "companyName": "Internal User (10.245.87.184)",
-    "leadScore": 116,
-    "keyInterests": [
-      "ROI/Justification",
-      "Analytics Product",
-      "Contacted Sales",
-      "Careers",
-      "AI Agent Research",
-      "Knowledge Hub Trial",
-      "Knowledge Hub Research",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-27T10:49:27-07:00",
-    "visitCount": 9
-  },
-  {
-    "companyName": "Internal User (192.168.213.224)",
-    "leadScore": 41,
-    "keyInterests": [
-      "Insurance Industry",
-      "Government Sector",
-      "Utilities Industry",
-      "About Us",
-      "Public Sector",
-      "Knowledge Hub Research",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-26T17:05:25-07:00",
-    "visitCount": 8
-  },
-  {
-    "companyName": "Internal User (172.19.133.219)",
-    "leadScore": 6,
-    "keyInterests": [
-      "Health Insurance",
-      "About Us"
-    ],
-    "lastVisit": "2025-06-13T11:19:15-07:00",
-    "visitCount": 2
-  },
-  {
-    "companyName": "Internal User (192.168.179.30)",
-    "leadScore": 37,
-    "keyInterests": [
-      "Government Sector",
-      "About Us",
-      "AI Agent Trial",
-      "Company News",
-      "Retail Industry"
-    ],
-    "lastVisit": "2025-06-27T18:43:26-07:00",
-    "visitCount": 6
   },
   {
     "companyName": "Amazon.com, Inc",
-    "leadScore": 22,
-    "keyInterests": [
-      "Government Sector",
-      "Insurance Industry",
-      "Company Events",
-      "Healthcare Industry",
-      "Careers",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-27T05:39:49-07:00",
-    "visitCount": 8
-  },
-  {
-    "companyName": "AT&T Services, Inc.",
-    "leadScore": 21,
-    "keyInterests": [
-      "Telecommunications",
-      "Banking Industry",
-      "Financial Services Industry",
-      "Company News",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-27T14:57:39-07:00",
-    "visitCount": 8
-  },
-  {
-    "companyName": "Board of Customs",
-    "leadScore": 17,
-    "keyInterests": [
-      "Insurance Industry",
-      "Case Studies",
-      "Healthcare Industry",
-      "Company News",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-25T06:00:14-07:00",
-    "visitCount": 5
-  },
-  {
-    "companyName": "Mobile Live Services",
-    "leadScore": 51,
-    "keyInterests": [
-      "Insurance Industry",
-      "ROI/Justification",
-      "Conversation Hub",
-      "Banking Industry",
-      "Case Studies",
-      "Healthcare Industry",
-      "Health Insurance"
-    ],
-    "lastVisit": "2025-06-27T23:38:09-07:00",
-    "visitCount": 8
-  },
-  {
-    "companyName": "Ziggo Services B.V",
-    "leadScore": 27,
-    "keyInterests": [
-      "ROI/Justification",
-      "Case Studies",
-      "Public Sector",
-      "Webinars",
-      "Retail Industry"
-    ],
-    "lastVisit": "2025-06-19T12:40:43-07:00",
-    "visitCount": 7
-  },
-  {
-    "companyName": "Internal User (10.0.189.157)",
-    "leadScore": 33,
-    "keyInterests": [
-      "Insurance Industry",
-      "Healthcare Providers",
-      "About Us",
-      "Public Sector",
-      "Careers",
-      "Company News",
-      "AI Agent Research"
-    ],
-    "lastVisit": "2025-06-26T02:10:14-07:00",
-    "visitCount": 9
-  },
-  {
-    "companyName": "Microsoft Azure Cloud (eastus)",
-    "leadScore": 58,
-    "keyInterests": [
-      "Government Sector",
-      "ROI/Justification",
-      "Case Studies",
-      "Utilities Industry",
-      "About Us",
-      "Public Sector",
-      "Health Insurance",
-      "Webinars",
-      "Knowledge Hub Research",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-25T03:38:43-07:00",
-    "visitCount": 12
-  },
-  {
-    "companyName": "Eli Lilly and Company",
     "leadScore": 62,
     "keyInterests": [
-      "Insurance Industry",
-      "ROI/Justification",
-      "Analytics Product",
       "Company Events",
-      "Financial Services Industry",
-      "Careers",
-      "Public Sector",
-      "Health Insurance",
-      "Retail Industry",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-25T13:38:03-07:00",
-    "visitCount": 13
-  },
-  {
-    "companyName": "Internal User (172.24.245.99)",
-    "leadScore": 2,
-    "keyInterests": [
-      "Careers",
-      "Company News"
-    ],
-    "lastVisit": "2025-06-23T00:40:45-07:00",
-    "visitCount": 2
-  },
-  {
-    "companyName": "Sheridan College",
-    "leadScore": 37,
-    "keyInterests": [
-      "Telecommunications",
-      "Banking Industry",
-      "Manufacturing Industry",
-      "Careers",
-      "Webinars",
-      "Retail Industry",
-      "AI Agent Research"
-    ],
-    "lastVisit": "2025-06-23T21:25:58-07:00",
-    "visitCount": 9
-  },
-  {
-    "companyName": "Google Public DNS",
-    "leadScore": 77,
-    "keyInterests": [
-      "Government Sector",
-      "Conversation Hub",
-      "Banking Industry",
+      "Requested Demo",
       "Utilities Industry",
+      "Telecommunications",
       "Public Sector",
+      "Government Sector",
       "Technology Sector",
+      "Banking Industry",
       "Podcasts",
-      "Webinars",
-      "Knowledge Hub Trial",
-      "Retail Industry",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-28T00:13:37-07:00",
-    "visitCount": 12
-  },
-  {
-    "companyName": "Internal User (192.168.252.124)",
-    "leadScore": 36,
-    "keyInterests": [
-      "Telecommunications",
-      "Insurance Industry",
-      "Banking Industry",
-      "Travel/Hospitality/Airlines",
-      "Financial Services Industry",
-      "Podcasts",
-      "Retail Industry",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-26T08:20:42-07:00",
-    "visitCount": 9
-  },
-  {
-    "companyName": "Internal User (192.168.0.62)",
-    "leadScore": 27,
-    "keyInterests": [
-      "Government Sector",
-      "Banking Industry",
-      "Travel/Hospitality/Airlines",
-      "Healthcare Industry",
-      "About Us",
-      "Careers",
-      "Health Insurance"
-    ],
-    "lastVisit": "2025-06-23T16:34:44-07:00",
-    "visitCount": 8
-  },
-  {
-    "companyName": "Venture Communications",
-    "leadScore": 40,
-    "keyInterests": [
-      "Telecommunications",
-      "AI Agent Trial",
-      "Utilities Industry",
-      "Healthcare Industry"
-    ],
-    "lastVisit": "2025-06-26T12:03:16-07:00",
-    "visitCount": 5
-  },
-  {
-    "companyName": "Ricoh USA, Inc.",
-    "leadScore": 41,
-    "keyInterests": [
-      "Banking Industry",
-      "Contacted Sales",
-      "Health Insurance",
-      "Webinars",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-27T12:45:39-07:00",
-    "visitCount": 5
-  },
-  {
-    "companyName": "Microsoft Limited",
-    "leadScore": 31,
-    "keyInterests": [
-      "Travel/Hospitality/Airlines",
-      "Company Events",
-      "Healthcare Industry",
-      "Financial Services Industry",
-      "AI Agent Research"
-    ],
-    "lastVisit": "2025-06-20T15:13:39-07:00",
-    "visitCount": 6
-  },
-  {
-    "companyName": "Darly S Cantrell",
-    "leadScore": 17,
-    "keyInterests": [
-      "Banking Industry",
-      "Case Studies",
-      "Healthcare Industry",
-      "About Us",
       "Financial Services Industry"
     ],
-    "lastVisit": "2025-06-23T20:50:05-07:00",
-    "visitCount": 5
-  },
-  {
-    "companyName": "Internal User (192.168.153.131)",
-    "leadScore": 32,
-    "keyInterests": [
-      "Insurance Industry",
-      "Telecommunications",
-      "Healthcare Industry",
-      "About Us",
-      "Public Sector",
-      "Company News",
-      "Technology Sector",
-      "Retail Industry"
-    ],
-    "lastVisit": "2025-06-24T22:49:39-07:00",
-    "visitCount": 8
-  },
-  {
-    "companyName": "Microsoft Azure Cloud (northeurope)",
-    "leadScore": 71,
-    "keyInterests": [
-      "Requested Demo",
-      "Banking Industry",
-      "Analytics Product",
-      "Manufacturing Industry",
-      "Case Studies",
-      "Healthcare Industry",
-      "Technology Sector",
-      "Retail Industry",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-26T10:36:26-07:00",
+    "lastVisit": "2025-06-28T00:39:21-07:00",
     "visitCount": 10
   },
   {
-    "companyName": "Toronto Dominion Bank",
-    "leadScore": 26,
+    "companyName": "Apple Inc",
+    "leadScore": 123,
     "keyInterests": [
-      "Insurance Industry",
-      "Telecommunications",
-      "Company Events",
+      "Company News",
+      "Careers",
+      "Knowledge Hub Research",
       "Healthcare Industry",
-      "Financial Services Industry",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-25T22:40:45-07:00",
-    "visitCount": 7
-  },
-  {
-    "companyName": "AWS Route 53 (GLOBAL)",
-    "leadScore": 35,
-    "keyInterests": [
-      "Telecommunications",
-      "Requested Demo",
-      "Healthcare Providers"
-    ],
-    "lastVisit": "2025-06-10T10:42:03-07:00",
-    "visitCount": 3
-  },
-  {
-    "companyName": "AWS EC2 (us-east-1)",
-    "leadScore": 57,
-    "keyInterests": [
-      "Banking Industry",
-      "Travel/Hospitality/Airlines",
-      "Analytics Product",
-      "Company Events",
       "Utilities Industry",
-      "Public Sector",
-      "Podcasts",
+      "Health Insurance",
+      "Requested Demo",
+      "Conversation Hub",
+      "Insurance Industry",
       "Technology Sector",
+      "Public Sector",
+      "Banking Industry",
+      "Manufacturing Industry",
+      "Healthcare Providers",
+      "Podcasts",
+      "Travel/Hospitality/Airlines",
       "AI Agent Research"
     ],
-    "lastVisit": "2025-06-18T23:26:01-07:00",
-    "visitCount": 9
-  },
-  {
-    "companyName": "DoD Network Information Center",
-    "leadScore": 37,
-    "keyInterests": [
-      "Government Sector",
-      "Banking Industry",
-      "Analytics Product",
-      "Travel/Hospitality/Airlines",
-      "Company Events",
-      "Healthcare Industry",
-      "Company News"
-    ],
-    "lastVisit": "2025-06-22T11:09:37-07:00",
-    "visitCount": 8
+    "lastVisit": "2025-06-26T09:21:02-07:00",
+    "visitCount": 23
   },
   {
     "companyName": "Navy Network Information Center",
-    "leadScore": 15,
-    "keyInterests": [
-      "Financial Services Industry",
-      "Technology Sector",
-      "Retail Industry"
-    ],
-    "lastVisit": "2025-06-26T12:00:59-07:00",
-    "visitCount": 3
-  },
-  {
-    "companyName": "Facebook, Inc.",
-    "leadScore": 46,
+    "leadScore": 47,
     "keyInterests": [
       "Careers",
-      "ROI/Justification",
-      "Conversation Hub",
-      "Analytics Product"
-    ],
-    "lastVisit": "2025-06-27T12:17:21-07:00",
-    "visitCount": 4
-  },
-  {
-    "companyName": "EE Limited",
-    "leadScore": 16,
-    "keyInterests": [
-      "Public Sector",
-      "Careers",
-      "Financial Services Industry",
-      "Retail Industry"
-    ],
-    "lastVisit": "2025-06-25T21:24:18-07:00",
-    "visitCount": 4
-  },
-  {
-    "companyName": "Internal User (172.20.163.103)",
-    "leadScore": 31,
-    "keyInterests": [
-      "Telecommunications",
-      "Insurance Industry",
-      "ROI/Justification",
-      "Health Insurance",
-      "Podcasts"
-    ],
-    "lastVisit": "2025-06-22T22:36:51-07:00",
-    "visitCount": 5
-  },
-  {
-    "companyName": "Amazon Technologies Inc. (us-east-1)",
-    "leadScore": 12,
-    "keyInterests": [
-      "Webinars",
-      "Utilities Industry",
-      "Case Studies",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-27T20:00:15-07:00",
-    "visitCount": 4
-  },
-  {
-    "companyName": "Microsoft Corporation",
-    "leadScore": 56,
-    "keyInterests": [
-      "ROI/Justification",
-      "Utilities Industry",
       "Healthcare Industry",
-      "AI Agent Trial",
-      "Company News",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-26T05:21:51-07:00",
-    "visitCount": 6
-  },
-  {
-    "companyName": "Microsoft Azure Cloud (westus)",
-    "leadScore": 21,
-    "keyInterests": [
-      "Company Events",
-      "Conversation Hub",
-      "Banking Industry"
-    ],
-    "lastVisit": "2025-06-26T02:52:10-07:00",
-    "visitCount": 4
-  },
-  {
-    "companyName": "Internal User (172.27.173.235)",
-    "leadScore": 21,
-    "keyInterests": [
-      "Public Sector",
-      "Health Insurance",
-      "Podcasts",
-      "Technology Sector",
-      "Manufacturing Industry"
-    ],
-    "lastVisit": "2025-06-24T02:06:38-07:00",
-    "visitCount": 6
-  },
-  {
-    "companyName": "Internal User (192.168.96.60)",
-    "leadScore": 12,
-    "keyInterests": [
-      "Technology Sector",
-      "Careers",
-      "Utilities Industry",
-      "About Us"
-    ],
-    "lastVisit": "2025-06-26T22:46:15-07:00",
-    "visitCount": 4
-  },
-  {
-    "companyName": "Internal User (192.168.55.230)",
-    "leadScore": 45,
-    "keyInterests": [
-      "Conversation Hub",
-      "Banking Industry",
-      "Public Sector",
-      "Financial Services Industry",
       "Health Insurance",
       "Retail Industry",
-      "Manufacturing Industry"
+      "Public Sector",
+      "Government Sector",
+      "Webinars",
+      "ROI/Justification",
+      "Travel/Hospitality/Airlines"
     ],
-    "lastVisit": "2025-06-26T16:17:47-07:00",
+    "lastVisit": "2025-06-28T10:27:52-07:00",
+    "visitCount": 12
+  },
+  {
+    "companyName": "Bell Canada",
+    "leadScore": 42,
+    "keyInterests": [
+      "Careers",
+      "Healthcare Industry",
+      "Conversation Hub",
+      "Retail Industry",
+      "Technology Sector",
+      "Banking Industry",
+      "Healthcare Providers",
+      "Podcasts"
+    ],
+    "lastVisit": "2025-06-26T05:11:00-07:00",
+    "visitCount": 8
+  },
+  {
+    "companyName": "CIT - Cork Institute of Technology",
+    "leadScore": 32,
+    "keyInterests": [
+      "Company News",
+      "Healthcare Industry",
+      "Retail Industry",
+      "Technology Sector",
+      "Healthcare Providers",
+      "Webinars",
+      "Financial Services Industry",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-28T05:54:37-07:00",
     "visitCount": 9
   },
   {
-    "companyName": "Internal User (10.250.78.213)",
-    "leadScore": 10,
+    "companyName": "Eli Lilly and Company",
+    "leadScore": 17,
+    "keyInterests": [
+      "Company News",
+      "Healthcare Industry",
+      "Utilities Industry",
+      "Technology Sector",
+      "Webinars"
+    ],
+    "lastVisit": "2025-06-28T00:01:56-07:00",
+    "visitCount": 5
+  },
+  {
+    "companyName": "Internal User (10.47.42.198)",
+    "leadScore": 31,
+    "keyInterests": [
+      "Public Sector",
+      "Government Sector",
+      "Healthcare Providers",
+      "Manufacturing Industry",
+      "Banking Industry",
+      "About Us",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-28T16:06:40-07:00",
+    "visitCount": 8
+  },
+  {
+    "companyName": "Internal User (192.168.16.108)",
+    "leadScore": 40,
+    "keyInterests": [
+      "Knowledge Hub Research",
+      "Healthcare Industry",
+      "Utilities Industry",
+      "Public Sector",
+      "Manufacturing Industry",
+      "Healthcare Providers"
+    ],
+    "lastVisit": "2025-06-26T13:46:20-07:00",
+    "visitCount": 8
+  },
+  {
+    "companyName": "Internal User (172.20.28.116)",
+    "leadScore": 22,
+    "keyInterests": [
+      "Company News",
+      "Retail Industry",
+      "Technology Sector",
+      "Financial Services Industry",
+      "Banking Industry",
+      "About Us"
+    ],
+    "lastVisit": "2025-06-28T05:06:54-07:00",
+    "visitCount": 8
+  },
+  {
+    "companyName": "Universidad Nacional de Buenos Aires",
+    "leadScore": 46,
+    "keyInterests": [
+      "Knowledge Hub Research",
+      "Healthcare Industry",
+      "Utilities Industry",
+      "Health Insurance",
+      "Retail Industry",
+      "Government Sector",
+      "Banking Industry",
+      "Podcasts"
+    ],
+    "lastVisit": "2025-06-26T11:42:44-07:00",
+    "visitCount": 10
+  },
+  {
+    "companyName": "Google Public DNS",
+    "leadScore": 21,
+    "keyInterests": [
+      "Utilities Industry",
+      "Technology Sector",
+      "Banking Industry",
+      "About Us",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-28T08:32:37-07:00",
+    "visitCount": 5
+  },
+  {
+    "companyName": "DoD Network Information Center",
+    "leadScore": 31,
+    "keyInterests": [
+      "Utilities Industry",
+      "Retail Industry",
+      "Analytics Product",
+      "About Us",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-28T11:29:42-07:00",
+    "visitCount": 6
+  },
+  {
+    "companyName": "Internal User (192.168.146.76)",
+    "leadScore": 27,
+    "keyInterests": [
+      "Analytics Product",
+      "Government Sector",
+      "Manufacturing Industry",
+      "Webinars",
+      "About Us"
+    ],
+    "lastVisit": "2025-06-26T00:00:27-07:00",
+    "visitCount": 5
+  },
+  {
+    "companyName": "TELUS-DSL-EDTNABXE",
+    "leadScore": 27,
+    "keyInterests": [
+      "Healthcare Industry",
+      "Case Studies",
+      "Telecommunications",
+      "Analytics Product",
+      "About Us"
+    ],
+    "lastVisit": "2025-06-26T08:08:44-07:00",
+    "visitCount": 5
+  },
+  {
+    "companyName": "Google LLC",
+    "leadScore": 41,
+    "keyInterests": [
+      "Company Events",
+      "Conversation Hub",
+      "Telecommunications",
+      "Retail Industry",
+      "Government Sector",
+      "Healthcare Providers",
+      "Financial Services Industry"
+    ],
+    "lastVisit": "2025-06-26T18:23:18-07:00",
+    "visitCount": 7
+  },
+  {
+    "companyName": "Microsoft Azure Cloud (francecentral)",
+    "leadScore": 26,
+    "keyInterests": [
+      "Telecommunications",
+      "Retail Industry",
+      "Insurance Industry",
+      "Manufacturing Industry",
+      "About Us",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-26T06:10:46-07:00",
+    "visitCount": 9
+  },
+  {
+    "companyName": "AWS EC2 (us-east-1)",
+    "leadScore": 32,
+    "keyInterests": [
+      "Health Insurance",
+      "Technology Sector",
+      "Webinars",
+      "Healthcare Providers",
+      "Podcasts",
+      "AI Agent Research"
+    ],
+    "lastVisit": "2025-06-26T12:38:32-07:00",
+    "visitCount": 6
+  },
+  {
+    "companyName": "AWS EC2 (us-west-2)",
+    "leadScore": 32,
+    "keyInterests": [
+      "Knowledge Hub Research",
+      "Company News",
+      "Health Insurance",
+      "Webinars",
+      "Manufacturing Industry",
+      "Healthcare Providers"
+    ],
+    "lastVisit": "2025-06-17T23:02:44-07:00",
+    "visitCount": 6
+  },
+  {
+    "companyName": "Amazon Technologies Inc. (us-east-1)",
+    "leadScore": 89,
+    "keyInterests": [
+      "Knowledge Hub Research",
+      "Careers",
+      "Healthcare Industry",
+      "Utilities Industry",
+      "Health Insurance",
+      "Conversation Hub",
+      "Telecommunications",
+      "Analytics Product",
+      "Banking Industry",
+      "Webinars",
+      "Healthcare Providers",
+      "Podcasts",
+      "About Us",
+      "Financial Services Industry",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-27T01:20:22-07:00",
+    "visitCount": 17
+  },
+  {
+    "companyName": "Internal User (192.168.208.99)",
+    "leadScore": 20,
+    "keyInterests": [
+      "Technology Sector",
+      "Government Sector",
+      "Manufacturing Industry",
+      "Health Insurance"
+    ],
+    "lastVisit": "2025-06-22T21:22:45-07:00",
+    "visitCount": 5
+  },
+  {
+    "companyName": "Level 3, LLC",
+    "leadScore": 125,
+    "keyInterests": [
+      "Company Events",
+      "Utilities Industry",
+      "Conversation Hub",
+      "Contacted Sales",
+      "Manufacturing Industry",
+      "Healthcare Industry",
+      "Case Studies",
+      "Health Insurance",
+      "ROI/Justification",
+      "Analytics Product",
+      "Insurance Industry",
+      "Retail Industry",
+      "Healthcare Providers",
+      "Financial Services Industry",
+      "About Us",
+      "Company News",
+      "Careers",
+      "Telecommunications",
+      "Public Sector"
+    ],
+    "lastVisit": "2025-06-27T13:21:07-07:00",
+    "visitCount": 32
+  },
+  {
+    "companyName": "AWS Route 53 (GLOBAL)",
+    "leadScore": 47,
+    "keyInterests": [
+      "Utilities Industry",
+      "Company Events",
+      "Health Insurance",
+      "Knowledge Hub Trial",
+      "Technology Sector",
+      "Webinars",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-27T15:28:58-07:00",
+    "visitCount": 8
+  },
+  {
+    "companyName": "Data Foundry, Inc.",
+    "leadScore": 61,
+    "keyInterests": [
+      "Utilities Industry",
+      "Health Insurance",
+      "AI Agent Trial",
+      "Telecommunications",
+      "Insurance Industry",
+      "Technology Sector",
+      "Government Sector",
+      "Healthcare Providers",
+      "About Us"
+    ],
+    "lastVisit": "2025-06-26T16:45:15-07:00",
+    "visitCount": 9
+  },
+  {
+    "companyName": "Internal User (10.244.101.199)",
+    "leadScore": 36,
+    "keyInterests": [
+      "Company Events",
+      "Telecommunications",
+      "Technology Sector",
+      "Government Sector",
+      "Travel/Hospitality/Airlines",
+      "AI Agent Research"
+    ],
+    "lastVisit": "2025-06-26T17:57:07-07:00",
+    "visitCount": 7
+  },
+  {
+    "companyName": "Orange PCS GPRS Services",
+    "leadScore": 46,
+    "keyInterests": [
+      "Healthcare Industry",
+      "Utilities Industry",
+      "Knowledge Hub Trial",
+      "Insurance Industry",
+      "Manufacturing Industry",
+      "Podcasts"
+    ],
+    "lastVisit": "2025-06-27T21:14:30-07:00",
+    "visitCount": 6
+  },
+  {
+    "companyName": "Meta Platforms Ireland Limited",
+    "leadScore": 63,
+    "keyInterests": [
+      "Company News",
+      "Company Events",
+      "ROI/Justification",
+      "Contacted Sales",
+      "Insurance Industry",
+      "Government Sector",
+      "Healthcare Providers",
+      "Podcasts",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-25T12:05:25-07:00",
+    "visitCount": 9
+  },
+  {
+    "companyName": "Amazon.com, Inc.",
+    "leadScore": 51,
+    "keyInterests": [
+      "Careers",
+      "Conversation Hub",
+      "Insurance Industry",
+      "Healthcare Providers",
+      "Banking Industry",
+      "Financial Services Industry",
+      "AI Agent Research"
+    ],
+    "lastVisit": "2025-06-28T13:21:48-07:00",
+    "visitCount": 8
+  },
+  {
+    "companyName": "Net",
+    "leadScore": 15,
+    "keyInterests": [
+      "Public Sector",
+      "Utilities Industry",
+      "Health Insurance"
+    ],
+    "lastVisit": "2025-06-13T03:23:43-07:00",
+    "visitCount": 3
+  },
+  {
+    "companyName": "Telekom Deutschland GmbH",
+    "leadScore": 31,
+    "keyInterests": [
+      "Knowledge Hub Research",
+      "Utilities Industry",
+      "Retail Industry",
+      "Public Sector",
+      "About Us"
+    ],
+    "lastVisit": "2025-06-20T04:56:52-07:00",
+    "visitCount": 5
+  },
+  {
+    "companyName": "Internal User (172.21.48.64)",
+    "leadScore": 56,
+    "keyInterests": [
+      "Health Insurance",
+      "Telecommunications",
+      "Analytics Product",
+      "Public Sector",
+      "Technology Sector",
+      "Webinars",
+      "Banking Industry",
+      "AI Agent Research"
+    ],
+    "lastVisit": "2025-06-26T21:10:43-07:00",
+    "visitCount": 8
+  },
+  {
+    "companyName": "WorldSpice Technologies",
+    "leadScore": 27,
+    "keyInterests": [
+      "Podcasts",
+      "Company Events",
+      "Contacted Sales"
+    ],
+    "lastVisit": "2025-06-26T07:00:06-07:00",
+    "visitCount": 4
+  },
+  {
+    "companyName": "Global Capacity",
+    "leadScore": 35,
+    "keyInterests": [
+      "Utilities Industry",
+      "Technology Sector",
+      "Government Sector",
+      "ROI/Justification",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-28T01:29:11-07:00",
+    "visitCount": 6
+  },
+  {
+    "companyName": "Microsoft Azure Cloud (northeurope)",
+    "leadScore": 63,
+    "keyInterests": [
+      "Careers",
+      "Knowledge Hub Research",
+      "Utilities Industry",
+      "Requested Demo",
+      "Retail Industry",
+      "Technology Sector",
+      "Webinars",
+      "About Us",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-22T12:05:22-07:00",
+    "visitCount": 11
+  },
+  {
+    "companyName": "Pujan Corp",
+    "leadScore": 15,
+    "keyInterests": [
+      "Banking Industry",
+      "Telecommunications",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-28T04:02:50-07:00",
+    "visitCount": 3
+  },
+  {
+    "companyName": "Shared Services Canada",
+    "leadScore": 15,
+    "keyInterests": [
+      "Technology Sector",
+      "Public Sector",
+      "Manufacturing Industry"
+    ],
+    "lastVisit": "2025-06-18T07:03:26-07:00",
+    "visitCount": 4
+  },
+  {
+    "companyName": "Internal User (172.16.157.23)",
+    "leadScore": 30,
+    "keyInterests": [
+      "Knowledge Hub Research",
+      "Banking Industry",
+      "Financial Services Industry",
+      "Manufacturing Industry"
+    ],
+    "lastVisit": "2025-06-18T11:00:39-07:00",
+    "visitCount": 6
+  },
+  {
+    "companyName": "Internal User (172.22.250.175)",
+    "leadScore": 16,
+    "keyInterests": [
+      "Careers",
+      "Government Sector",
+      "Utilities Industry",
+      "Health Insurance"
+    ],
+    "lastVisit": "2025-06-27T07:16:29-07:00",
+    "visitCount": 4
+  },
+  {
+    "companyName": "City of Westfield (Gas & Electric Light Department)",
+    "leadScore": 16,
+    "keyInterests": [
+      "Healthcare Providers",
+      "Technology Sector",
+      "Case Studies",
+      "Manufacturing Industry"
+    ],
+    "lastVisit": "2025-06-28T14:55:37-07:00",
+    "visitCount": 4
+  },
+  {
+    "companyName": "Marimonet",
+    "leadScore": 45,
+    "keyInterests": [
+      "Healthcare Industry",
+      "Health Insurance",
+      "Retail Industry",
+      "Insurance Industry",
+      "Technology Sector",
+      "Public Sector",
+      "Government Sector",
+      "Healthcare Providers",
+      "Banking Industry"
+    ],
+    "lastVisit": "2025-06-28T02:50:44-07:00",
+    "visitCount": 11
+  },
+  {
+    "companyName": "Sony Network Communications Inc.",
+    "leadScore": 56,
+    "keyInterests": [
+      "Healthcare Industry",
+      "Requested Demo",
+      "Retail Industry",
+      "Public Sector",
+      "Government Sector",
+      "Banking Industry",
+      "About Us",
+      "Financial Services Industry"
+    ],
+    "lastVisit": "2025-06-22T01:44:44-07:00",
+    "visitCount": 11
+  },
+  {
+    "companyName": "Amazon Technologies Inc. (us-west-2)",
+    "leadScore": 30,
     "keyInterests": [
       "Financial Services Industry",
-      "Utilities Industry"
+      "ROI/Justification",
+      "Telecommunications",
+      "Health Insurance"
     ],
-    "lastVisit": "2025-06-20T20:35:28-07:00",
+    "lastVisit": "2025-06-11T03:47:23-07:00",
+    "visitCount": 4
+  },
+  {
+    "companyName": "Internal User (172.24.48.132)",
+    "leadScore": 16,
+    "keyInterests": [
+      "Careers",
+      "Healthcare Industry",
+      "Manufacturing Industry",
+      "Retail Industry"
+    ],
+    "lastVisit": "2025-06-19T08:13:47-07:00",
+    "visitCount": 5
+  },
+  {
+    "companyName": "Stofa",
+    "leadScore": 51,
+    "keyInterests": [
+      "Knowledge Hub Research",
+      "Conversation Hub",
+      "Telecommunications",
+      "Insurance Industry",
+      "Government Sector",
+      "Podcasts",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-17T18:11:37-07:00",
+    "visitCount": 7
+  },
+  {
+    "companyName": "Internal User (10.227.30.18)",
+    "leadScore": 40,
+    "keyInterests": [
+      "Financial Services Industry",
+      "Conversation Hub",
+      "Telecommunications",
+      "Knowledge Hub Research"
+    ],
+    "lastVisit": "2025-06-28T15:54:23-07:00",
+    "visitCount": 6
+  },
+  {
+    "companyName": "Microsoft Azure Cloud (eastus2)",
+    "leadScore": 42,
+    "keyInterests": [
+      "Company News",
+      "ROI/Justification",
+      "Government Sector",
+      "Manufacturing Industry",
+      "Healthcare Providers",
+      "Banking Industry",
+      "About Us",
+      "Travel/Hospitality/Airlines"
+    ],
+    "lastVisit": "2025-06-23T19:38:42-07:00",
+    "visitCount": 9
+  },
+  {
+    "companyName": "Internal User (10.174.22.49)",
+    "leadScore": 66,
+    "keyInterests": [
+      "Healthcare Industry",
+      "Case Studies",
+      "Requested Demo",
+      "Knowledge Hub Trial",
+      "Manufacturing Industry",
+      "Financial Services Industry"
+    ],
+    "lastVisit": "2025-06-23T06:06:50-07:00",
+    "visitCount": 7
+  },
+  {
+    "companyName": "Internal User (10.166.147.3)",
+    "leadScore": 20,
+    "keyInterests": [
+      "Healthcare Industry",
+      "Travel/Hospitality/Airlines",
+      "Utilities Industry",
+      "Health Insurance"
+    ],
+    "lastVisit": "2025-06-25T21:06:03-07:00",
+    "visitCount": 4
+  },
+  {
+    "companyName": "Internal User (192.168.245.177)",
+    "leadScore": 11,
+    "keyInterests": [
+      "Insurance Industry",
+      "Company News",
+      "Healthcare Industry"
+    ],
+    "lastVisit": "2025-06-27T12:35:27-07:00",
+    "visitCount": 4
+  },
+  {
+    "companyName": "Internal User (192.168.239.33)",
+    "leadScore": 36,
+    "keyInterests": [
+      "Company Events",
+      "Conversation Hub",
+      "Telecommunications",
+      "Government Sector",
+      "Manufacturing Industry",
+      "Healthcare Providers"
+    ],
+    "lastVisit": "2025-06-26T15:42:13-07:00",
+    "visitCount": 6
+  },
+  {
+    "companyName": "Internal User (10.112.60.72)",
+    "leadScore": 26,
+    "keyInterests": [
+      "Insurance Industry",
+      "Careers",
+      "Travel/Hospitality/Airlines",
+      "AI Agent Research"
+    ],
+    "lastVisit": "2025-06-20T02:24:49-07:00",
+    "visitCount": 4
+  },
+  {
+    "companyName": "Internal User (192.168.187.107)",
+    "leadScore": 20,
+    "keyInterests": [
+      "Conversation Hub",
+      "Retail Industry"
+    ],
+    "lastVisit": "2025-06-01T11:29:04-07:00",
     "visitCount": 2
   },
   {
-    "companyName": "Internal User (10.80.142.58)",
-    "leadScore": 20,
+    "companyName": "Internal User (10.57.24.236)",
+    "leadScore": 22,
     "keyInterests": [
-      "Insurance Industry",
-      "Health Insurance",
-      "Retail Industry",
-      "Travel/Hospitality/Airlines"
+      "Company News",
+      "ROI/Justification",
+      "Financial Services Industry",
+      "Company Events"
     ],
-    "lastVisit": "2025-06-19T15:50:53-07:00",
-    "visitCount": 5
+    "lastVisit": "2025-06-26T00:41:12-07:00",
+    "visitCount": 4
   },
   {
-    "companyName": "Internal User (172.17.194.156)",
-    "leadScore": 31,
+    "companyName": "Internal User (192.168.247.169)",
+    "leadScore": 25,
     "keyInterests": [
-      "Travel/Hospitality/Airlines",
-      "Analytics Product",
-      "Utilities Industry",
-      "About Us",
-      "Health Insurance"
+      "ROI/Justification",
+      "Government Sector",
+      "Manufacturing Industry"
     ],
-    "lastVisit": "2025-06-24T05:24:01-07:00",
-    "visitCount": 5
+    "lastVisit": "2025-06-14T03:23:57-07:00",
+    "visitCount": 3
   }
 ]

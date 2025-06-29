@@ -12,18 +12,24 @@
     <h1 class="text-2xl font-bold text-blue-900 tracking-tight">Sales Intelligence Dashboard</h1>
   </header>
   <main class="max-w-6xl mx-auto px-4 py-8">
-    <!-- Metrics -->
+    <!-- Metrics Cards -->
     <div id="metrics" class="flex flex-wrap gap-4 mb-8"></div>
-    <!-- Search -->
-    <div class="flex items-center mb-4">
-      <div class="relative w-full max-w-md">
-        <input id="search" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200" placeholder="Search by company or interest..." />
-        <svg class="absolute left-3 top-2.5 text-gray-400" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="7"/><line x1="16" y1="16" x2="12.5" y2="12.5"/></svg>
-      </div>
+    <!-- Filters Section -->
+    <div class="flex flex-wrap gap-4 mb-4 items-end">
+      <input type="number" id="scoreFilter" placeholder="Min Lead Score" class="border rounded px-2 py-1 w-32" />
+      <select id="interestFilter" class="border rounded px-2 py-1 w-48"></select>
+      <input type="date" id="startDate" class="border rounded px-2 py-1 w-40" />
+      <input type="date" id="endDate" class="border rounded px-2 py-1 w-40" />
+      <select id="orderBy" class="border rounded px-2 py-1 w-56">
+        <option value="score">Order by Lead Score</option>
+        <option value="recent">Order by Most Recent Visit</option>
+        <option value="visits">Order by Number of Visits</option>
+      </select>
+      <input id="search" class="flex-1 pl-10 pr-4 py-2 border border-gray-300 rounded shadow-sm" placeholder="Search..." />
     </div>
-    <!-- Table -->
+    <!-- Data Table -->
     <div class="overflow-x-auto bg-white rounded shadow">
-      <table class="min-w-full text-sm" id="accounts-table">
+      <table class="min-w-full text-sm">
         <thead>
           <tr class="bg-gray-100 text-gray-700">
             <th class="py-2 px-4 text-left">Company Name</th>
@@ -32,127 +38,351 @@
             <th class="py-2 px-4"></th>
           </tr>
         </thead>
-        <tbody id="accounts-tbody">
-        </tbody>
+        <tbody id="accounts-tbody"></tbody>
       </table>
     </div>
   </main>
-  <!-- Modal -->
+  <!-- Modal for Details -->
   <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 hidden">
     <div class="bg-white rounded-lg shadow-lg w-full max-w-lg p-6 relative">
       <button id="modal-close" class="absolute top-3 right-3 text-gray-400 hover:text-gray-700">
-        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="18" y2="18"/><line x1="18" y1="4" x2="4" y2="18"/></svg>
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="4" x2="18" y2="18"/><line x1="18" y1="4" x2="4" y2="18"/></svg>
       </button>
       <div id="modal-content"></div>
     </div>
   </div>
   <script>
+    // ============================================================================
+    // GLOBAL VARIABLES
+    // ============================================================================
     let allAccounts = [];
-    let filteredAccounts = [];
-    const metricsDiv = document.getElementById('metrics');
-    const tbody = document.getElementById('accounts-tbody');
-    const searchInput = document.getElementById('search');
-    const modal = document.getElementById('modal');
-    const modalContent = document.getElementById('modal-content');
-    const modalClose = document.getElementById('modal-close');
+    
+    // DOM Elements
+    const elements = {
+      metrics: document.getElementById('metrics'),
+      tbody: document.getElementById('accounts-tbody'),
+      scoreFilter: document.getElementById('scoreFilter'),
+      interestFilter: document.getElementById('interestFilter'),
+      startDate: document.getElementById('startDate'),
+      endDate: document.getElementById('endDate'),
+      orderBy: document.getElementById('orderBy'),
+      searchInput: document.getElementById('search'),
+      modal: document.getElementById('modal'),
+      modalContent: document.getElementById('modal-content'),
+      modalClose: document.getElementById('modal-close')
+    };
 
+    // ============================================================================
+    // UTILITY FUNCTIONS
+    // ============================================================================
+    
+    /**
+     * Get lead score color class based on score value
+     */
+    function getLeadScoreColor(score) {
+      if (score >= 75) return 'bg-red-500';
+      if (score >= 40) return 'bg-yellow-500';
+      return 'bg-green-500';
+    }
+
+    /**
+     * Format date for display
+     */
+    function formatDate(dateString) {
+      if (!dateString) return '-';
+      return new Date(dateString).toLocaleString();
+    }
+
+    /**
+     * Create interest tags HTML
+     */
+    function createInterestTags(interests) {
+      if (!interests || interests.length === 0) return '';
+      return interests.map(tag => 
+        `<span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-1 mb-1 px-2 py-0.5 rounded">${tag}</span>`
+      ).join('');
+    }
+
+    /**
+     * Get all unique interests from accounts
+     */
+    function getAllInterests(accounts) {
+      const set = new Set();
+      accounts.forEach(account => {
+        (account.keyInterests || []).forEach(interest => set.add(interest));
+      });
+      return Array.from(set).sort();
+    }
+
+    // ============================================================================
+    // RENDERING FUNCTIONS
+    // ============================================================================
+    
+    /**
+     * Render metrics cards
+     */
     function renderMetrics(accounts) {
       const total = accounts.length;
-      const hot = accounts.filter(a => a.leadScore >= 75).length;
-      metricsDiv.innerHTML = `
+      const hotAccounts = accounts.filter(account => account.leadScore >= 75).length;
+      
+      elements.metrics.innerHTML = `
         <div class="flex items-center bg-white shadow rounded p-4 min-w-[180px]">
-          <div class="mr-3 text-blue-600"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="20" height="20" rx="4"/></svg></div>
-          <div><div class="text-2xl font-bold">${total}</div><div class="text-gray-500 text-sm">Total Tracked Companies</div></div>
+          <div class="mr-3 text-blue-600">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="20" height="20" rx="4"/></svg>
+          </div>
+          <div>
+            <div class="text-2xl font-bold">${total}</div>
+            <div class="text-gray-500 text-sm">Total Tracked Companies</div>
+          </div>
         </div>
         <div class="flex items-center bg-white shadow rounded p-4 min-w-[180px]">
-          <div class="mr-3 text-orange-600"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6l-2 2m8-8v6l2 2m-6 2v6l-2 2m8-8v6l2 2"/></svg></div>
-          <div><div class="text-2xl font-bold">${hot}</div><div class="text-gray-500 text-sm">Hot Accounts</div></div>
+          <div class="mr-3 text-orange-600">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6l-2 2m8-8v6l2 2m-6 2v6l-2 2m8-8v6l2 2"/></svg>
+          </div>
+          <div>
+            <div class="text-2xl font-bold">${hotAccounts}</div>
+            <div class="text-gray-500 text-sm">Hot Accounts</div>
+          </div>
         </div>
       `;
     }
 
+    /**
+     * Sort accounts based on selected criteria
+     */
+    function sortAccounts(accounts) {
+      const sortBy = elements.orderBy.value;
+      
+      switch (sortBy) {
+        case 'recent':
+          return accounts.sort((a, b) => new Date(b.lastVisit || 0) - new Date(a.lastVisit || 0));
+        case 'visits':
+          return accounts.sort((a, b) => b.visitCount - a.visitCount);
+        case 'score':
+        default:
+          return accounts.sort((a, b) => b.leadScore - a.leadScore);
+      }
+    }
+
+    /**
+     * Render accounts table
+     */
     function renderTable(accounts) {
-      tbody.innerHTML = '';
-      accounts.sort((a, b) => b.leadScore - a.leadScore);
-      for (const c of accounts) {
-        const tags = c.keyInterests.map(tag => `<span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-1 mb-1 px-2 py-0.5 rounded">${tag}</span>`).join('');
-        tbody.innerHTML += `
+      elements.tbody.innerHTML = '';
+      
+      const sortedAccounts = sortAccounts(accounts);
+      
+      sortedAccounts.forEach(account => {
+        const interestTags = createInterestTags(account.keyInterests);
+        const scoreColor = getLeadScoreColor(account.leadScore);
+        const scoreWidth = Math.min(100, Math.round((account.leadScore / 100) * 100));
+        
+        const row = `
           <tr class="border-t hover:bg-blue-50 transition">
-            <td class="py-2 px-4 font-medium text-blue-900">${c.companyName}</td>
+            <td class="py-2 px-4 font-medium text-blue-900">${account.companyName}</td>
             <td class="py-2 px-4 w-48">
               <div class="w-full bg-gray-200 rounded h-3">
-                <div class="h-3 rounded ${c.leadScore >= 75 ? 'bg-red-500' : c.leadScore >= 40 ? 'bg-yellow-500' : 'bg-green-500'}" style="width:${Math.min(100, Math.round((c.leadScore/100)*100))}%"></div>
+                <div class="h-3 rounded ${scoreColor}" style="width:${scoreWidth}%"></div>
               </div>
-              <span class="ml-2 text-xs text-gray-600">${c.leadScore}</span>
+              <span class="ml-2 text-xs text-gray-600">${account.leadScore}</span>
             </td>
-            <td class="py-2 px-4"><div class="flex flex-wrap">${tags}</div></td>
+            <td class="py-2 px-4">
+              <div class="flex flex-wrap">${interestTags}</div>
+            </td>
             <td class="py-2 px-4 text-right">
-              <button class="inline-flex items-center gap-1 px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition details-btn" data-company='${encodeURIComponent(JSON.stringify(c))}'>
-                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="7"/><line x1="8" y1="4" x2="8" y2="8"/><line x1="8" y1="12" x2="8" y2="12"/></svg> Details
+              <button class="inline-flex items-center gap-1 px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition details-btn" 
+                      data-company='${encodeURIComponent(JSON.stringify(account))}'>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="8" cy="8" r="7"/>
+                  <line x1="8" y1="4" x2="8" y2="8"/>
+                  <line x1="8" y1="12" x2="8" y2="12"/>
+                </svg> 
+                Details
               </button>
             </td>
           </tr>
         `;
-      }
-      // Add event listeners for details buttons
-      document.querySelectorAll('.details-btn').forEach(btn => {
-        btn.onclick = () => {
-          const c = JSON.parse(decodeURIComponent(btn.getAttribute('data-company')));
-          showModal(c);
-        };
+        elements.tbody.innerHTML += row;
+      });
+      
+      // Add event listeners to detail buttons
+      attachDetailButtonListeners();
+    }
+
+    /**
+     * Attach event listeners to detail buttons
+     */
+    function attachDetailButtonListeners() {
+      document.querySelectorAll('.details-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const accountData = JSON.parse(decodeURIComponent(button.getAttribute('data-company')));
+          showModal(accountData);
+        });
       });
     }
 
-    function showModal(company) {
-      modalContent.innerHTML = `
-        <h2 class="text-xl font-bold mb-2 flex items-center gap-2">${company.companyName}</h2>
+    /**
+     * Show modal with account details
+     */
+    function showModal(account) {
+      const scoreColor = getLeadScoreColor(account.leadScore);
+      const scoreWidth = Math.min(100, Math.round((account.leadScore / 100) * 100));
+      const interestTags = createInterestTags(account.keyInterests);
+      
+      elements.modalContent.innerHTML = `
+        <h2 class="text-xl font-bold mb-2">${account.companyName}</h2>
         <div class="mb-2 flex items-center gap-2">
           <span class="font-semibold">Lead Score:</span>
           <div class="w-32 bg-gray-200 rounded h-3 inline-block align-middle">
-            <div class="h-3 rounded ${company.leadScore >= 75 ? 'bg-red-500' : company.leadScore >= 40 ? 'bg-yellow-500' : 'bg-green-500'}" style="width:${Math.min(100, Math.round((company.leadScore/100)*100))}%"></div>
+            <div class="h-3 rounded ${scoreColor}" style="width:${scoreWidth}%"></div>
           </div>
-          <span class="ml-2 text-sm text-gray-600">${company.leadScore}</span>
+          <span class="ml-2 text-sm text-gray-600">${account.leadScore}</span>
         </div>
         <div class="mb-2">
           <span class="font-semibold">Key Interests:</span>
-          <div class="mt-1 flex flex-wrap">${company.keyInterests.map(tag => `<span class='inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-1 mb-1 px-2 py-0.5 rounded'>${tag}</span>`).join('')}</div>
+          <div class="mt-1 flex flex-wrap">${interestTags}</div>
         </div>
         <div class="mb-2">
           <span class="font-semibold">Last Visit:</span>
-          <span class="ml-2 text-gray-700 text-sm">${company.lastVisit ? new Date(company.lastVisit).toLocaleString() : '-'}</span>
+          <span class="ml-2 text-gray-700 text-sm">${formatDate(account.lastVisit)}</span>
         </div>
         <div class="mb-2">
           <span class="font-semibold">Total Visits:</span>
-          <span class="ml-2 text-gray-700 text-sm">${company.visitCount}</span>
+          <span class="ml-2 text-gray-700 text-sm">${account.visitCount}</span>
         </div>
       `;
-      modal.classList.remove('hidden');
+      
+      elements.modal.classList.remove('hidden');
     }
 
-    modalClose.onclick = () => modal.classList.add('hidden');
-    modal.onclick = (e) => { if (e.target === modal) modal.classList.add('hidden'); };
+    // ============================================================================
+    // FILTERING FUNCTIONS
+    // ============================================================================
+    
+    /**
+     * Apply all filters to accounts
+     */
+    function applyFilters() {
+      let filtered = allAccounts.slice();
+      
+      // Filter by minimum lead score
+      const minScore = parseInt(elements.scoreFilter.value, 10) || 0;
+      filtered = filtered.filter(account => account.leadScore >= minScore);
+      
+      // Filter by interest
+      const selectedInterest = elements.interestFilter.value;
+      if (selectedInterest) {
+        filtered = filtered.filter(account => 
+          account.keyInterests && account.keyInterests.includes(selectedInterest)
+        );
+      }
+      
+      // Filter by date range
+      const startDate = elements.startDate.value ? new Date(elements.startDate.value) : null;
+      const endDate = elements.endDate.value ? new Date(elements.endDate.value) : null;
+      
+      if (startDate || endDate) {
+        filtered = filtered.filter(account => {
+          if (!account.lastVisit) return false;
+          const visitDate = new Date(account.lastVisit);
+          if (startDate && visitDate < startDate) return false;
+          if (endDate && visitDate > endDate) return false;
+          return true;
+        });
+      }
+      
+      // Filter by search term
+      const searchTerm = elements.searchInput.value.toLowerCase();
+      if (searchTerm) {
+        filtered = filtered.filter(account =>
+          account.companyName.toLowerCase().includes(searchTerm) ||
+          (account.keyInterests && account.keyInterests.some(interest => 
+            interest.toLowerCase().includes(searchTerm)
+          ))
+        );
+      }
+      
+      renderTable(filtered);
+      renderMetrics(filtered);
+    }
 
-    searchInput.addEventListener('input', () => {
-      const s = searchInput.value.toLowerCase();
-      filteredAccounts = allAccounts.filter(c =>
-        c.companyName.toLowerCase().includes(s) ||
-        (c.keyInterests && c.keyInterests.some(k => k.toLowerCase().includes(s)))
-      );
-      renderTable(filteredAccounts);
-      renderMetrics(filteredAccounts);
-    });
-
-    fetch('visitorData.json')
-      .then(res => res.json())
-      .then(data => {
-        allAccounts = data;
-        filteredAccounts = data;
-        renderTable(data);
-        renderMetrics(data);
-      })
-      .catch(() => {
-        tbody.innerHTML = '<tr><td colspan="4" class="p-8 text-center text-red-500">Failed to load visitor data.</td></tr>';
+    // ============================================================================
+    // EVENT LISTENERS
+    // ============================================================================
+    
+    /**
+     * Initialize event listeners
+     */
+    function initializeEventListeners() {
+      // Filter inputs
+      const filterElements = [
+        elements.scoreFilter,
+        elements.interestFilter,
+        elements.startDate,
+        elements.endDate,
+        elements.searchInput,
+        elements.orderBy
+      ];
+      
+      filterElements.forEach(element => {
+        element.addEventListener('input', applyFilters);
       });
+      
+      // Order by dropdown
+      elements.orderBy.addEventListener('change', applyFilters);
+      
+      // Modal close
+      elements.modalClose.addEventListener('click', () => {
+        elements.modal.classList.add('hidden');
+      });
+      
+      // Close modal when clicking outside
+      elements.modal.addEventListener('click', (event) => {
+        if (event.target === elements.modal) {
+          elements.modal.classList.add('hidden');
+        }
+      });
+    }
+
+    // ============================================================================
+    // DATA LOADING
+    // ============================================================================
+    
+    /**
+     * Load and initialize data
+     */
+    function loadData() {
+      fetch('visitorData.json?t=' + Date.now())
+        .then(response => response.json())
+        .then(data => {
+          allAccounts = data;
+          
+          // Populate interest filter dropdown
+          const interests = getAllInterests(data);
+          elements.interestFilter.innerHTML = 
+            '<option value="">All Interests</option>' +
+            interests.map(interest => `<option value="${interest}">${interest}</option>`).join('');
+          
+          // Render initial view
+          renderTable(data);
+          renderMetrics(data);
+        })
+        .catch(error => {
+          console.error('Failed to load visitor data:', error);
+          elements.tbody.innerHTML = 
+            '<tr><td colspan="4" class="p-8 text-center text-red-500">Failed to load visitor data.</td></tr>';
+        });
+    }
+
+    // ============================================================================
+    // INITIALIZATION
+    // ============================================================================
+    
+    // Initialize the application when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      initializeEventListeners();
+      loadData();
+    });
   </script>
 </body>
 </html> 
